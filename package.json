@@ -1,0 +1,13 @@
+{
+  "name": "daily-manager",
+  "version": "1.0.0",
+  "description": "A web app to manage daily tasks, timetables, and reminders",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "serve": "npx serve ."
+  },
+  "keywords": ["todo", "timetable", "reminders", "daily-planner"],
+  "author": "Your Name",
+  "license": "MIT"
+}

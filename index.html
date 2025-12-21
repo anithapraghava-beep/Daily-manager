@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Daily Manager</h1>
+            <div class="date-display" id="currentDate"></div>
+        </header>
+
+        <div class="main-content">
+            <!-- To-Do List Section -->
+            <section class="todo-section">
+                <h2>To-Do List</h2>
+                <div class="todo-input">
+                    <input type="text" id="todoInput" placeholder="Add a new task...">
+                    <button onclick="addTodo()">Add</button>
+                </div>
+                <ul id="todoList" class="todo-list"></ul>
+            </section>
+
+            <!-- Timetable Section -->
+            <section class="timetable-section">
+                <h2>Daily Timetable</h2>
+                <div class="timetable-input">
+                    <input type="time" id="timeInput">
+                    <input type="text" id="activityInput" placeholder="Activity...">
+                    <button onclick="addTimeSlot()">Add</button>
+                </div>
+                <div id="timetable" class="timetable"></div>
+            </section>
+
+            <!-- Reminders Section -->
+            <section class="reminder-section">
+                <h2>Reminders</h2>
+                <div class="reminder-input">
+                    <input type="datetime-local" id="reminderDatetime">
+                    <input type="text" id="reminderText" placeholder="Reminder text...">
+                    <button onclick="addReminder()">Add</button>
+                </div>
+                <div id="reminderList" class="reminder-list"></div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
